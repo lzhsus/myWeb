@@ -1,0 +1,123 @@
+/*公共样式类*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*自适应LOGO 大小*/
+.navbar-brand > img {
+    height: 100%;
+}
+
+/*自定义 导航条 ID  增加  height的高度*/
+#navbar_top {
+    height: 80px;
+    line-height: 64px;
+    margin-bottom: 0;
+}
+
+/*增加LOGO 图标的  margin-top  margin-bottom 的值*/
+.nav-logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*导航条 a  标签 的 padding-top padding-bottom  增加*/
+.navbar .nav > li > a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*注册 登录*/
+.navbar-right div {
+    float: left;
+    padding: 0 10px;
+    line-height: 80px;
+    color: #fff;
+}
+.navbar-right div a{
+     color: #999999;
+ }
+.navbar-right div a:hover{
+    color: red;
+}
+/*自适应产生的  下拉框  增加其 margin-top 的值*/
+.navbar-header > button {
+    margin-top: 20px;
+}
+
+/*公共 模态框 modal-content 下div 缩小*/
+.form-group {
+    width: 80%;
+    margin: 22px auto;
+}
+
+/*公共 模态框 改变  标题大小 */
+.modal-header h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+/*单独 模态框 modalRegister 注册 */
+/*定位 icon 图片位置*/
+#modalRegister .form-group {
+    position: relative;
+}
+
+#modalRegister .form-group input {
+    padding-left: 30px;
+}
+
+#modalRegister .form-group span {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+/*单独 模态框 modal-footer*/
+.modal-footer > input {
+    margin-bottom: 10px;
+}
+
+/*轮播图*/
+.swiper-container img{
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+/*主题内容部分*/
+/*content-left 左边*/
+.content-left{
+    width: 100%;
+}
+.content-left ul li:first-child{
+    height: 46px;
+    border-radius: 10px 10px 0 0 ;
+    background-color: red;
+}
+.content-left ul li:last-child{
+    border-radius:0 0 10px 10px ;
+}
+.content-left ul li{
+    box-sizing: border-box;
+    height: 50px;
+    line-height: 30px;
+    background-color: #999999;
+    margin: 4px 0;
+    padding: 10px 10px;
+    position: relative;
+}
+.content-left ul li a{
+    margin-left: 6px;
+    color: black;
+    font-size: 18px;
+}
+.content-left .caret{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+.navbar-Login>div{
+    float: left;
+}

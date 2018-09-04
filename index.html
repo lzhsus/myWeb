@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>龙泉传媒</title>
+    <!--适配手机端-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1, user-scalable=no">
+    <!--移动设备先行-->
+
+    <!-- swiper 轮播图插件 -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <!--boostrap 网页布局框架-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--首页 css 布局样式-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--首页 媒体查询 样式-->
+    <link rel="stylesheet" href="css/meitichaxun.css">
+    <!--字体  图片样式-->
+    <link rel="stylesheet" href="css/icon-login.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body style="height: 3000px">
+<!--导航条 登录 注册 -->
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar_top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#nav_id_click" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--LOGO图片-->
+            <a class="navbar-brand" href="javascript:;">
+                <img class="nav-logo" alt="Brand" src="images/nav-LOGO.png">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <!--左边导航 nav-->
+        <ul class="nav navbar-nav collapse navbar-collapse" id="nav_id_click">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">作品案例</a></li>
+            <li><a href="javascript:;">拍摄花絮</a></li>
+            <li><a href="javascript:;">企业资讯</a></li>
+            <li><a href="javascript:;">媒体矩阵</a></li>
+            <li><a href="javascript:;">联系我们</a></li>
+        </ul>
+
+        <div class="navbar-right" id="Login">
+            <div><a href="#modalLogin" data-toggle="modal">登录</a></div>
+            <div><a href="#modalRegister" data-toggle="modal">免费注册</a></div>
+        </div>
+    </div>
+</nav>
+<!-- Small modal -->
+<!--登录 模态框 id modalLogin-->
+<div class="modal fade" id="modalLogin">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span></button>
+                <h2>账号登录</h2>
+            </div>
+            <div class="media-body">
+                <form action="javascript:;" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入用户名">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="请输入密码">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox">
+                        <span>记住密码</span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <input type="button" value="登录" class="btn btn-primary">
+                <input type="button" value="忘记密码" class="btn btn-default">
+            </div>
+        </div>
+    </div>
+</div>
+<!--注册 模态框 id modalRegister-->
+<div class="modal fade" id="modalRegister">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span></button>
+                <h2>账号注册</h2>
+            </div>
+            <div class="media-body">
+                <form action="javascript:;" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username">
+                        <span class="icon-icon-username"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <span class="icon-icon-password"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Reenter Password">
+                        <span class="icon-icicon-psd-repeat"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="cell phone number" class="form-control">
+                        <span class="icon-icon-phone"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" value="注册" class="btn btn-primary form-control">
+                <a href="javascript:;" data-dismiss="modal" data-toggle="modal"
+                   data-target="#modalLogin">已有账号？登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--轮播图-->
+<div class="container">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg"></div>
+            <div class="swiper-slide"><img src="images/2.jpg"></div>
+            <div class="swiper-slide"><img src="images/3.jpg"></div>
+            <div class="swiper-slide"><img src="images/4.jpg"></div>
+            <div class="swiper-slide"><img src="images/5.jpg"></div>
+            <div class="swiper-slide"><img src="images/6.jpg"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="content-left">
+                <ul>
+                    <li>
+                        <a href="javascript:;">我们的服务</a>
+                        <span class="caret"></span>
+                    </li>
+                    <li>
+                        <span><img src="images/icon-shoot.png"></span>
+                        <a href="javascript:;">宣传片</a>
+                    </li>
+                    <li>
+                        <span><img src="images/icon-shoot.png"></span>
+                        <a href="javascript:;">微电影</a>
+                    </li>
+                    <li>
+                        <span><img src="images/icon-shoot.png"></span>
+                        <a href="javascript:;">商业演出</a>
+                    </li>
+                    <li>
+                        <span><img src="images/icon-shoot.png"></span>
+                        <a href="javascript:;">影视制作</a>
+                    </li>
+                    <li>
+                        <span><img src="images/icon-shoot.png"></span>
+                        <a href="javascript:;">品牌推广</a>
+                    </li>
+                    <li>
+                        <span><img src="images/icon-shoot.png"></span>
+                        <a href="javascript:;">艺术培训</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/index.js"></script>

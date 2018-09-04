@@ -1,0 +1,52 @@
+@media screen and (max-width: 767px){
+    /*屏幕的取值范围  668--767*/
+    /*导航条 导航*/
+    .navbar-collapse{
+        width: 16%;
+        float: right;
+        text-align: center;
+        border: 0;
+        position: absolute;
+        right: 0;
+    }
+    /*form 表单 登录 与注册*/
+    .navbar-form{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 100%;
+    }
+    /*在特定尺寸下 导航条 导航 a 标签*/
+    .navbar .nav>li >a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #F1F1F1;
+    }
+    .banner-img span{
+        font-size: 40px;
+        right: 1%;
+    }
+}
+@media screen and (max-width: 667px) and (min-width: 478px){
+    .navbar-collapse{
+        width: 24%;
+    }
+    .banner-img span{
+        font-size: 34px;
+    }
+}
+@media screen and (max-width: 477px) {
+    .navbar-collapse{
+        width: 36%;
+    }
+    .banner-img span{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 767px){
+    #Login{
+        position: absolute;
+        top: 0;
+        right: 100px;
+    }
+}
